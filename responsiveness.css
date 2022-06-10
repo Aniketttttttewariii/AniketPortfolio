@@ -65,7 +65,8 @@
 
     .sub111
     {
-        width: 50%;
+        width: fit-content;
+        padding: 15px;
     }
     
     .info12
