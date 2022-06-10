@@ -162,6 +162,7 @@ nav
     margin-top: 51px;
     text-align: center;
     justify-content: center;
+    gap: 51px;
 }
 
 .sub1
@@ -181,7 +182,7 @@ nav
     background-color: rgb(116, 109, 109);
     color: white;
     box-shadow: 0 4px 8px 0 red;
-    margin-left: 51px;
+    /* margin-left: 51px; */
     padding: 25px;
     border-radius: 11px;
 }
@@ -411,4 +412,3 @@ nav
     border-radius: 101px;
     margin-bottom: 15px;
 }
-
