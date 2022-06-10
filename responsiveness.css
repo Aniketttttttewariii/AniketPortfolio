@@ -53,11 +53,21 @@
         margin: auto;
     }
 
+    .part12, .part10
+    {
+        margin-right:35px;
+    }
+
     .sub1, .sub2, .sub101, .sub111, .sub121
     {
         margin-top: 21px;
     }
 
+    .sub111
+    {
+        width: 50%;
+    }
+    
     .info12
     {
         /* visibility: hidden; */
