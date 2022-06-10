@@ -1,0 +1,407 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: rgb(54, 3, 101);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@keyframes anim {
+    
+}
+
+@keyframes myfirst {
+    0%   {left:0px; top:0px;}
+    /* 25%  {left:0px; top:0px;} */
+    50%  {left:0px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+
+nav
+{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:100;
+    overflow: hidden;
+    background-color: rgb(74, 29, 116);;
+    color: white;
+    font-size: 38px;
+    font-weight: bolder;
+    padding: 15px;
+    /* text-align: center; */
+    /* margin-top: 11px; */
+}
+
+.part1
+{
+    color: white;
+    font-size: 21px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 101px;
+}
+
+.part2
+{
+    color: white;
+    font-size: 51px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 11px;
+}
+
+.part3
+{
+    color: white;
+    font-size: 21px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 11px;
+}
+
+.part4
+{
+    justify-content: center;
+    text-align: center;
+    margin-top: 51px;
+}
+
+#seeResume
+{
+    padding: 15px;
+    background-color: rgb(54, 3, 101);
+    border: 2px solid blue;
+    border-radius: 11px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#githubProfile
+{
+    padding: 15px;
+    background-color: rgb(141, 82, 196);
+    border: 2px solid blue;
+    border-radius: 11px;
+    color: white;
+    font-size: 18px;
+    margin-left: 11px;
+    cursor: pointer;
+}
+
+.part5
+{
+    text-align: center;
+    margin-top: 51px;
+    position: relative;
+    animation-name: myfirst;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+
+#aniimage
+{
+    border-radius: 131px;
+}
+
+.part6
+{
+    text-align: center;
+    margin-top: 81px;
+    color: rgb(132, 50, 209);
+}
+
+.part6 h1
+{
+    margin-top: 21px;
+}
+
+.part7
+{
+    text-align: center;
+    margin-top: 11px;
+    font-size: 21px;
+    color: rgb(132, 50, 209);
+}
+
+.part8
+{
+    margin-top: 41px;
+    font-size: 26px;
+    color: white;
+    margin-left: 201px;
+    margin-right: 201px;
+    box-shadow: 0 4px 8px 0 aqua;
+    transition: 0.3s;
+    padding: 11px;
+    border: 3px solid rebeccapurple;
+}
+
+.part8:hover
+{
+    box-shadow: 0 8px 16px 0 rgb(255, 0, 187);
+}
+
+.part91
+{
+    text-align: center;
+    margin-top: 51px;
+    color: rgb(132, 50, 209);
+}
+
+.part9
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 51px;
+    text-align: center;
+    justify-content: center;
+}
+
+.sub1
+{
+    text-align: center;
+    background-color: rgb(116, 109, 109);
+    color: white;
+    box-shadow: 0 4px 8px 0 red;
+    /* margin-left: 151px; */
+    padding: 25px;
+    border-radius: 11px;
+}
+
+.sub2
+{
+    text-align: center;
+    background-color: rgb(116, 109, 109);
+    color: white;
+    box-shadow: 0 4px 8px 0 red;
+    margin-left: 51px;
+    padding: 25px;
+    border-radius: 11px;
+}
+
+.sub1:hover, .sub2:hover
+{
+    box-shadow: 0 8px 16px 0 yellow;
+}
+
+.part10
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 51px;
+    text-align: center;
+    justify-content: center;
+}
+
+.sub101
+{
+    text-align: center;
+    background-color: black;
+    color: white;
+    box-shadow: 0 4px 8px 0 red;
+    margin-left: 51px;
+    padding: 35px;
+    border-radius: 11px;
+}
+
+.sub101 p, .sub101 a, .sub101 h1{
+    margin-top: 15px;
+    margin-bottom: 11px;
+}
+
+.sub101:hover
+{
+    box-shadow: 0 8px 16px 0 yellow;
+}
+
+.sub101 a
+{
+    text-decoration: none;
+    margin-top: 21px;
+}
+
+.part11
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 51px;
+    text-align: center;
+    justify-content: center;
+}
+
+.sub111
+{
+    text-align: center;
+    background-color: rgb(151, 146, 146);
+    color: white;
+    box-shadow: 0 4px 8px 0 red;
+    padding: 35px;
+    border-radius: 11px;
+    margin-left: 501px;
+    margin-right: 501px;
+    margin-top: 51px;
+}
+
+.sub111 p, sub111 img
+{
+    margin-top: 11px;
+    margin-bottom: 5px;
+}
+
+#link
+{
+    margin-top: 18px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#footer
+{
+    margin-top: 30px;
+    background-color: rgb(174, 0, 255);
+    text-align: center;
+    padding: 21px;
+}
+
+#footer p
+{
+    margin-top: 30px;
+    font-size: 21px;
+}
+
+#p1
+{
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.footer1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-top: 21px;
+    gap: 15px;
+}
+
+.part12
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 51px;
+    text-align: center;
+    justify-content: center;
+}
+
+.sub121
+{
+    text-align: center;
+    background-color: rgb(16, 2, 42);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgb(0, 255, 34);
+    margin-left: 51px;
+    padding: 35px;
+    border-radius: 11px;
+}
+
+#git:hover
+{
+    width: 40px;
+    height: 40px;
+}
+
+.sub121 p, .sub101 h1{
+    margin-top: 15px;
+    margin-bottom: 11px;
+}
+
+.sub121:hover
+{
+    box-shadow: 0 8px 16px 0 rgb(89, 0, 255);
+}
+
+.section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 18px;
+    text-decoration: none;
+}
+
+.section a
+{
+    text-decoration: none;
+    margin-top: 21px;
+    font-size: 18px;
+}
+
+.info1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 101px;   
+    margin-top: 51px;
+}
+
+.info11
+{
+    font-size: 21px;
+    color: wheat;
+    padding: 11px;
+    background-color: rgb(182, 112, 20);
+    box-shadow: 0 4px 8px 0 rgb(0, 255, 34);
+}
+
+.info12
+{
+    border: 3px solid red;
+    width: 200px;
+    border-radius: 11px;
+}
+
+.info11 p
+{
+    padding: 8px;
+}
+
+.info2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 41px;
+    margin-top: 51px;
+}
+
+.info21
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(100, 98, 98);
+    box-shadow: 0 4px 8px 0 rgb(0, 255, 34);
+    padding: 25px;
+    padding-left: 51px;
+    padding-right: 51px;
+    border-radius: 18px;
+    color: white;
+}
+
+.info21 p
+{
+    margin-top: 8px;
+}
