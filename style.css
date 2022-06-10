@@ -393,7 +393,7 @@ nav
     justify-content: center;
     align-items: center;
     background-color: rgb(100, 98, 98);
-    box-shadow: 0 4px 8px 0 rgb(0, 255, 34);
+    box-shadow: 0 14px 18px 0 black;
     padding: 25px;
     padding-left: 51px;
     padding-right: 51px;
@@ -404,4 +404,10 @@ nav
 .info21 p
 {
     margin-top: 8px;
+}
+
+#projectImage
+{
+    border-radius: 101px;
+    margin-bottom: 15px;
 }
