@@ -22,6 +22,14 @@ body
     100% {left:0px; top:0px;}
   }
 
+  @keyframes myfirst2 {
+    0%   {left:0px; top:0px;}
+    /* 25%  {left:0px; top:0px;} */
+    50%  {left:0px; top:400px;}
+    75%  {left:0px; top:400px;}
+    100% {left:0px; top:0px;}
+  }
+
 nav
 {
     position:fixed;
@@ -97,12 +105,41 @@ nav
 
 .part5
 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin-top: 51px;
+    /* margin-left: 21px; */
     position: relative;
     animation-name: myfirst;
     animation-duration: 2s;
     animation-delay: 0s;
+    /* gap: 40%; */
+}
+
+.icons
+{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: left;
+    justify-content: left;
+    margin-left: 21px;
+    animation-name: myfirst2;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    background-color: rgb(62, 58, 58);
+    border-radius: 51px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#githubIcon:hover, #linkedinIcon:hover, #facebookIcon:hover
+{
+    width: 21px;
+    height: 21px;
 }
 
 #aniimage
@@ -365,11 +402,16 @@ nav
     box-shadow: 0 4px 8px 0 rgb(0, 255, 34);
 }
 
-.info12
+/* .info12
 {
     border: 3px solid red;
     width: 200px;
     border-radius: 11px;
+}*/
+
+#aniimage2
+{
+    border-radius: 51px;
 }
 
 .info11 p
@@ -413,3 +455,84 @@ nav
     margin-bottom: 15px;
 }
 
+/* .dialogBox
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.dialogBox h2
+{
+    color: #A395E9;
+    text-align: left;
+} */
+
+#hacktoberDialog p, #DOGCDialog p, #celonisDialog p, #ciscoDialog p, #GCCRPDialog p, #GCRFPDialog p
+{
+    font-size: 21px;
+    margin-bottom: 31px;
+}
+
+#hacktoberDialog ol, #DOGCDialog ol, #celonisDialog ol, #ciscoDialog ol, #GCCRPDialog ol, #GCRFPDialog ol
+{
+    margin-bottom: 31px;
+}
+
+#hacktoberDialog li, #DOGCDialog li, #celonisDialog li, #ciscoDialog li, #GCCRPDialog li, #GCRFPDialog li
+{
+    font-size: 18px;
+    margin-top: 11px;
+}
+
+#closeDialog, #close30DOGCDialog, #closeCelonisDialog, #closeCiscoDialog, #closeGCCRPDialog, #closeGCRFPDialog
+{
+    background-color: rgb(130, 100, 231);
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    margin-top: 11px;
+    margin-left: 95%;
+    border-radius: 101px;
+    cursor: pointer;
+}
+
+#openHacktober, #open30DOGC, #openCelonis, #openCisco, #ciscoDialog, #openGCCRP, #openGCRFP
+{
+    text-decoration: none;
+    background-color: black;
+    color: violet;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#hacktoberDialog, #DOGCDialog, #celonisDialog, #ciscoDialog, #GCCRPDialog, #GCRFPDialog
+{
+    text-align: center;
+    justify-content: center;
+    margin-left: 30%;
+    background-color: rgb(16, 16, 17);
+    width: 35%;
+    padding: 15px;
+    border-radius: 15px;
+    color: #BABEC4;
+}
+
+li
+{
+    display: list-item;
+    list-style-position: inside;
+    color: white;
+}
+
+#dialogGithub
+{
+    background-color: #A395E9;
+    padding: 15px;
+    padding-right: 51px;
+    padding-left: 51px;
+    color: white;
+    font-size: 16px;
+    border-radius: 11px;
+    margin-bottom: 21px;
+    cursor: pointer;
+}
