@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsiveness.css">
+    <link rel="icon" href="/images/AniImage.jpeg">
     <title>Aniket's Portfolio Website</title>
 </head>
 <body id="body">
@@ -16,6 +17,17 @@
         <p>Hello, My name is</p>
     </div>
     <div class="part2">
+        <div class="icons">
+            <a href="">
+                <img id="githubIcon" src="images/github.png" alt="" width="16px" height="16px">
+            </a>
+            <a href="">
+                <img id="linkedinIcon" src="images/linkedinLogo.png" alt="" width="16px" height="16px">
+            </a>
+            <a href="">
+                <img id="facebookIcon" src="images/facebook.png" alt="" width="16px" height="16px">
+            </a>
+        </div>
         <p>Aniket Tewari</p>
     </div>
     <div class="part3">
@@ -26,12 +38,25 @@
         <button id="githubProfile" onclick="window.location.href='https://www.github.com/AniketTewari';">Github Profile</button>
     </div>
     <div class="part5">
-        <img id="aniimage" src="images/AniImage.jpeg" alt="ProfilePicture" width="250px" height="250px">
+        <!-- <div class="icons">
+            <a href="">
+                <img src="images/linkedinLogo.png" alt="">
+            </a>
+            <a href="">
+                <img src="images/linkedinLogo.png" alt="">
+            </a>
+            <a href="">
+                <img src="images/linkedinLogo.png" alt="">
+            </a>
+        </div> -->
+        <!-- <div class="imageLogo"> -->
+            <img id="aniimage" src="images/AniImage.jpeg" alt="ProfilePicture" width="250px" height="250px">
+        <!-- </div> -->
     </div>
 
     <div class="info1">
         <div class="info12">
-            <img src="images/image2.png" alt="Image">
+            <img id="aniimage2" src="images/Aniimage2.jpeg" alt="Image" width="250px" height="250px">
         </div>
         <div class="info11">
             <p>D.O.B -- 05 May 2001</p>
@@ -217,12 +242,45 @@
         <div class="sub101">
             <img src="images/hacktober.jfif" alt="Image" width="250px" height="100px">
             <h1>Hacktober Fest</h1>
-            <a href="">Know More →</a>
+            <dialog id="hacktoberDialog">
+
+                <button id="closeDialog" onclick="fun2();">x</button>
+
+                <!-- <div class="dialogBox">
+                    <h2> Hacktober Fest</h2>
+                    <button id="closeDialog">x</button>
+                </div> -->
+                <h2>Hacktober Fest</h2>
+                <p>Conducted by Digital Ocean in collaboration with companies like Intel, and many others.</p>
+                
+                <ol type="1">
+                    <li>Made successful Pull Requests.</li>
+                    <li>Made separate repos for the contest.</li>
+                    <li>Receieved Swags.</li>
+                </ol>
+
+                <button id="dialogGithub" onclick="window.open('https://github.com/AniketTewari');">
+                    Github</button>
+            </dialog>
+            <button id="openHacktober" onclick="fun1()";>Know More →</button>
         </div>
         <div class="sub101">
             <img src="images/30daysofgooglecloud.jfif" alt="Image" width="250px" height="100px">
             <h1>30 Days Of Google Cloud</h1>
-            <a href="">Know More →</a>
+            <dialog id="DOGCDialog">
+                <button id="close30DOGCDialog" onclick="funclose30DOGC();">x</button>
+                <h2>30 Days of Google Cloud</h2>
+                <p>Program organised by Google Cloud where users get to learn about Google Cloud Platform through various labs.</p>
+                
+                <ol type="1">
+                    <li>Achieved all milestones available in the program.</li>
+                    <li>Receieved Swags.</li>
+                </ol>
+
+                <button id="dialogGithub" onclick="window.open('https://drive.google.com/file/d/1wK2uzVM0GkCSDok5apJWTGSfMETvQ4W3/view?usp=drivesdk');">
+                    View</button>
+            </dialog>
+            <button id="open30DOGC" onclick="fun30DOGC()";>Know More →</button>
         </div>
     
     </div>
@@ -231,12 +289,40 @@
         <div class="sub101">
             <img src="images/celonis.png" alt="Image" width="250px" height="100px">
             <h1>Celonis (Process Mining)</h1>
-            <a href="https://drive.google.com/file/d/1vLoj-uyH75qUldXjF2UorMTWeMFfyBLC/view?usp=drivesdk">Know More →</a>
+            <dialog id="celonisDialog">
+                <button id="closeCelonisDialog" onclick="funcloseCelonis();">x</button>
+                <h2>Celonis</h2>
+                <p>Program organised by Celonis where users get to know about the Process Mining through the Celonis platform.</p>
+                
+                <ol type="1">
+                    <li>Completed the Course successfully.</li>
+                    <li>Interpreted the data through various labs.</li>
+                    <li>Received the Certificate.</li>
+                </ol>
+
+                <button id="dialogGithub" onclick="window.open('https://drive.google.com/file/d/1vLoj-uyH75qUldXjF2UorMTWeMFfyBLC/view?usp=drivesdk');">
+                    View</button>
+            </dialog>
+            <button id="openCelonis" onclick="funcelonis()";>Know More →</button>
         </div>
         <div class="sub101">
             <img src="images/cisco.png" alt="Image" width="250px" height="100px">
             <h1>Cisco (ITN)</h1>
-            <a href="https://drive.google.com/file/d/1vHkBOG9iCNlh4cm1LwHXV46XbPGtF7Oc/view?usp=drivesdk">Know More →</a>
+            <dialog id="ciscoDialog">
+                <button id="closeCiscoDialog" onclick="funcloseCisco();">x</button>
+                <h2>Cisco</h2>
+                <p>Virtual Courses provided by Cisco Netacad to enrich the users about Networking, Packet Tracer and DevNet.</p>
+                
+                <ol type="1">
+                    <li>Completed all the courses.</li>
+                    <li>Gained experience through various labs.</li>
+                    <li>Achieved Certificate of Merit.</li>
+                </ol>
+
+                <button id="dialogGithub" onclick="window.open('https://drive.google.com/file/d/1vHkBOG9iCNlh4cm1LwHXV46XbPGtF7Oc/view?usp=drivesdk');">
+                    View</button>
+            </dialog>
+            <button id="openCisco" onclick="funcisco()";>Know More →</button>
         </div>
     
     </div>
@@ -245,12 +331,40 @@
         <div class="sub101">
             <img src="images/googlecloudreadyfacilitatorprogram.png" alt="Image" width="250px" height="100px">
             <h1>Google Cloud Career Readiess Program</h1>
-            <a href="">Know More →</a>
+            <dialog id="GCCRPDialog">
+                <button id="closeGCCRPDialog" onclick="funcloseGCCRP();">x</button>
+                <h2>Google Cloud</h2>
+                <p>Virtual Courses provided by Coursera to enrich the users about Google Cloud platform and its functionalities.</p>
+                
+                <ol type="1">
+                    <li>Completed all the courses.</li>
+                    <li>Gained experience through various labs.</li>
+                    <li>Achieved Certificate of Merit.</li>
+                </ol>
+
+                <button id="dialogGithub" onclick="window.open('https://drive.google.com/file/d/1wMnr6WUFdWi7pLpOdkNn7fbFw3U5RwlJ/view?usp=drivesdk');">
+                    View</button>
+            </dialog>
+            <button id="openGCCRP" onclick="fungccrp()";>Know More →</button>
         </div>
         <div class="sub101">
             <img src="images/download.png" alt="Image" width="250px" height="100px">
             <h1>Google Cloud Ready Facilitator Program</h1>
-            <a href="">Know More →</a>
+            <dialog id="GCRFPDialog">
+                <button id="closeGCRFPDialog" onclick="funcloseGCRFP();">x</button>
+                <h2>Google Cloud</h2>
+                <p>Program organised by Google Cloud community to give experience about the Google Cloud through ML, Big Data, and many more.</p>
+                
+                <ol type="1">
+                    <li>Completed all the milestones.</li>
+                    <li>Gained experience through various labs.</li>
+                    <li>Achieved Certificate of Merit.</li>
+                </ol>
+
+                <button id="dialogGithub" onclick="window.open('https://drive.google.com/file/d/1vHkBOG9iCNlh4cm1LwHXV46XbPGtF7Oc/view?usp=drivesdk');">
+                    View</button>
+            </dialog>
+            <button id="openGCRFP" onclick="fungcrfp()";>Know More →</button>
         </div>
     </div>
 
@@ -274,7 +388,7 @@
         <div class="sub111">
             <img src="images/icons8-email-send-48.png" alt="Image" width="30px" height="30px">
             <h2>Telegram</h2>
-            <p>anikettewari565@gmail.com</p>
+            <p>Aniket Tewari</p>
             <a id="link" href="">Write Me →</a>
         </div>
     </div>
@@ -309,13 +423,105 @@
                     <img src="images/discord.png" alt="">
                 </a>
             </div>
+            <div class="f1">
+                <a href="https://www.linkedin.com/in/aniket-tewari-8729111b6">
+                    <img src="images/linkedLogoBottom.png" alt="">
+                </a>
+            </div>
         </div>
     </footer>
-    
         
 </body>
 
 <script>
-    
+    // (function()
+    // {
+    //     var hacktoberDialog=document.getElementById("hacktoberDialog");
+    //     document.getElementById("openHacktober").onclick=function()
+    //     {
+    //         hacktoberDialog.show();
+    //     };
+    // })();
+    // function fun1()
+    // {
+    //     var hacktoberDialog=document.getElementById("hacktoberDialog");
+    //     hacktoberDialog.show();
+    // }
+
+    function fun1()
+    {
+        var hacktoberDialog=document.getElementById("hacktoberDialog");
+        hacktoberDialog.show();
+
+        var bod=document.getElementById("body");
+        //bod.style.filter = 'blur(5px)';
+    }
+
+    function fun2()
+    {
+        var hacktoberDialog=document.getElementById("hacktoberDialog");
+        hacktoberDialog.close();
+    }
+
+    function fun30DOGC()
+    {
+        var dialog=document.getElementById("DOGCDialog");
+        dialog.show();
+    }
+
+    function funcelonis()
+    {
+        var dialog=document.getElementById("celonisDialog");
+        dialog.show();
+    }
+
+    function funcisco()
+    {
+        var dialog=document.getElementById("ciscoDialog");
+        dialog.show();
+    }
+
+    function fungccrp()
+    {
+        var dialog=document.getElementById("GCCRPDialog");
+        dialog.show();
+    }
+
+    function fungcrfp()
+    {
+        var dialog=document.getElementById("GCRFPDialog");
+        dialog.show();
+    }
+
+    function funclose30DOGC()
+    {
+        var dialog=document.getElementById("DOGCDialog");
+        dialog.close();
+    }
+
+    function funcloseCelonis()
+    {
+        var dialog=document.getElementById("celonisDialog");
+        dialog.close();
+    }
+
+    function funcloseCisco()
+    {
+        var dialog=document.getElementById("ciscoDialog");
+        dialog.close();
+    }
+
+    function funcloseGCCRP()
+    {
+        var dialog=document.getElementById("GCCRPDialog");
+        dialog.close();
+    }
+
+    function funcloseGCRFP()
+    {
+        var dialog=document.getElementById("GCRFPDialog");
+        dialog.close();
+    }
+
 </script>
 </html>
