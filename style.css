@@ -39,7 +39,8 @@ nav
     overflow: hidden;
     background-color: rgb(74, 29, 116);;
     color: white;
-    font-size: 38px;
+    /*font-size: 38px;*/
+    font-size: 18px; 
     font-weight: bolder;
     padding: 15px;
     /* text-align: center; */
