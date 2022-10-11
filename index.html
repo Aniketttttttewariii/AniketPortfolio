@@ -347,22 +347,22 @@
             <button id="openHacktober" onclick="fun1()";>Know More →</button>
         </div>
         <div class="sub101">
-            <img src="images/30daysofgooglecloud.jfif" alt="Image" width="250px" height="100px">
-            <h1>30 Days Of Google Cloud</h1>
-            <dialog id="DOGCDialog">
-                <button id="close30DOGCDialog" onclick="funclose30DOGC();">x</button>
-                <h2>30 Days of Google Cloud</h2>
-                <p>Program organised by Google Cloud where users get to learn about Google Cloud Platform through various labs.</p>
+            <img src="images/tcsCodevitaLogo.jpg" alt="Image" width="250px" height="100px">
+            <h1>TCS CodeVita 2022</h1>
+            <dialog id="TCSDialog">
+                <button id="closeTCSDialog" onclick="funcloseTCS();">x</button>
+                <h2>TCS CodeVita competition</h2>
+                <p>Competition organised nationwide by TCS Company in order to select the candidates for them.</p>
                 
                 <ol type="1">
-                    <li>Achieved all milestones available in the program.</li>
-                    <li>Receieved Swags.</li>
+                    <li>Successfully completed the Round-1 of the Competition.</li>
+                    <li>Achieved the Global Rank Certificate.</li>
                 </ol>
 
-                <button id="dialogGithub" onclick="window.open('https://drive.google.com/file/d/1wK2uzVM0GkCSDok5apJWTGSfMETvQ4W3/view?usp=drivesdk');">
+                <button id="dialogGithub" onclick="window.open('https://drive.google.com/file/d/1ysMsswgy8RxGSMfXVS8omsHxBNio_RWB/view?usp=drivesdk');">
                     View</button>
             </dialog>
-            <button id="open30DOGC" onclick="fun30DOGC()";>Know More →</button>
+            <button id="openTCS" onclick="funTCS()";>Know More →</button>
         </div>
     
     </div>
@@ -455,7 +455,7 @@
 
     <div class="part10">
         <div class="sub101">
-            <img src="images/30daysofgooglecloud.jfif" alt="Image" width="250px" height="100px">
+            <img src="images/learnToEarnProgramLogo.jpg" alt="Image" width="250px" height="100px">
             <h1>Learn to Earn Challenge</h1>
             <dialog id="lteDialog">
                 <button id="closelteDialog" onclick="funcloselte();">x</button>
@@ -491,6 +491,47 @@
                     View</button>
             </dialog>
             <button id="openGCRFP2022" onclick="fungcrfp2022()";>Know More →</button>
+        </div>
+
+    </div>
+
+    <div class="part10">
+        <div class="sub101">
+            <img src="images/nptelLogo.webp" alt="Image" width="250px" height="100px">
+            <h1>NPTEL</h1>
+            <dialog id="nptelDialog">
+                <button id="closenptelDialog" onclick="funclosenptel();">x</button>
+                <h2>NPTEL DSA</h2>
+                <p>NPTEL Certification Course of Data Structures and Algorithms in JAVA uploaded by IIT Professor.</p>
+                
+                <ol type="1">
+                    <li>Achieved the Course Completion Certificate.</li>
+                    <li>Achieved the Elite position and the Silver Medal.</li>
+                </ol>
+
+                <button id="dialogGithub" onclick="window.open('https://drive.google.com/file/d/1yeS24qy07SZ3fh5NgFeRIqZpwfhUSiqR/view?usp=drivesdk');">
+                    View</button>
+            </dialog>
+            <button id="opennptel" onclick="funnptel()";>Know More →</button>
+        </div>
+
+        <div class="sub101">
+            <img src="images/30daysofgooglecloud.jfif" alt="Image" width="250px" height="100px">
+            <h1>30 Days Of Google Cloud</h1>
+            <dialog id="DOGCDialog">
+                <button id="close30DOGCDialog" onclick="funclose30DOGC();">x</button>
+                <h2>30 Days of Google Cloud</h2>
+                <p>Program organised by Google Cloud where users get to learn about Google Cloud Platform through various labs.</p>
+                
+                <ol type="1">
+                    <li>Achieved all milestones available in the program.</li>
+                    <li>Receieved Swags.</li>
+                </ol>
+
+                <button id="dialogGithub" onclick="window.open('https://drive.google.com/file/d/1wK2uzVM0GkCSDok5apJWTGSfMETvQ4W3/view?usp=drivesdk');">
+                    View</button>
+            </dialog>
+            <button id="open30DOGC" onclick="fun30DOGC()";>Know More →</button>
         </div>
 
     </div>
@@ -632,9 +673,21 @@
         dialog.show();
     }
 
+    function funnptel()
+    {
+        var dialog=document.getElementById("nptelDialog");
+        dialog.show();
+    }
+
     function fungcrfp2022()
     {
         var dialog=document.getElementById("GCRFP2022Dialog");
+        dialog.show();
+    }
+
+    function funTCS()
+    {
+        var dialog=document.getElementById("TCSDialog");
         dialog.show();
     }
 
@@ -644,6 +697,12 @@
         wiproDialog.show();
     }
 
+    function funcloseTCS()
+    {
+        var dialog=document.getElementById("TCSDialog");
+        dialog.close();
+    }
+    
     function funcloseWipro()
     {
         var dialog=document.getElementById("wiproDialog");
@@ -692,6 +751,12 @@
         dialog.close();
     }
 
+    function funclosenptel()
+    {
+        var dialog=document.getElementById("nptelDialog");
+        dialog.close();
+    }
+    
     function funcloselte()
     {
         var dialog=document.getElementById("lteDialog");
