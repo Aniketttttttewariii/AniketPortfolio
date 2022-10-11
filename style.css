@@ -467,24 +467,24 @@ nav
     text-align: left;
 } */
 
-#wiproDialog p, #hack2022Dialog p, #hacktoberDialog p, #DOGCDialog p, #celonisDialog p, #ciscoDialog p, #GCCRPDialog p, #GCRFPDialog p, #lteDialog p, #GCRFP2022Dialog p
+#wiproDialog p, #TCSDialog p, #hack2022Dialog p, #hacktoberDialog p, #DOGCDialog p, #celonisDialog p, #ciscoDialog p, #GCCRPDialog p, #GCRFPDialog p, #nptelDialog p, #lteDialog p, #GCRFP2022Dialog p
 {
     font-size: 21px;
     margin-bottom: 31px;
 }
 
-#wiproDialog ol, #hack2022Dialog ol, #hacktoberDialog ol, #DOGCDialog ol, #celonisDialog ol, #ciscoDialog ol, #GCCRPDialog ol, #GCRFPDialog ol, #lteDialog ol, #GCRFP2022Dialog ol
+#wiproDialog ol, #TCSDialog ol, #hack2022Dialog ol, #hacktoberDialog ol, #DOGCDialog ol, #celonisDialog ol, #ciscoDialog ol, #GCCRPDialog ol, #GCRFPDialog ol, #nptelDialog ol, #lteDialog ol, #GCRFP2022Dialog ol
 {
     margin-bottom: 31px;
 }
 
-#wiproDialog li, #hack2022Dialog li, #hacktoberDialog li, #DOGCDialog li, #celonisDialog li, #ciscoDialog li, #GCCRPDialog li, #GCRFPDialog li, #lteDialog li, #GCRFP2022Dialog li
+#wiproDialog li, #TCSDialog li, #hack2022Dialog li, #hacktoberDialog li, #DOGCDialog li, #celonisDialog li, #ciscoDialog li, #GCCRPDialog li, #GCRFPDialog li, #nptelDialog li, #lteDialog li, #GCRFP2022Dialog li
 {
     font-size: 18px;
     margin-top: 11px;
 }
 
-#closeWiproDialog, #closeHack2022, #closeDialog, #close30DOGCDialog, #closeCelonisDialog, #closeCiscoDialog, #closeGCCRPDialog, #closeGCRFPDialog, #closelteDialog, #closeGCRFP2022Dialog
+#closeWiproDialog, #closeTCSDialog, #closeHack2022, #closeDialog, #close30DOGCDialog, #closeCelonisDialog, #closeCiscoDialog, #closeGCCRPDialog, #closeGCRFPDialog, #closenptelDialog, #closelteDialog, #closeGCRFP2022Dialog
 {
     background-color: rgb(130, 100, 231);
     text-decoration: none;
@@ -496,7 +496,7 @@ nav
     cursor: pointer;
 }
 
-#openWipro, #openHack2022, #openHacktober, #open30DOGC, #openCelonis, #openCisco, #ciscoDialog, #openGCCRP, #openGCRFP, #openlte, #openGCRFP2022
+#openWipro, #openTCS, #openHack2022, #openHacktober, #open30DOGC, #openCelonis, #openCisco, #ciscoDialog, #openGCCRP, #openGCRFP, #opennptel, #openlte, #openGCRFP2022
 {
     text-decoration: none;
     background-color: black;
@@ -505,7 +505,7 @@ nav
     font-size: 14px;
 }
 
-#wiproDialog, #hack2022Dialog, #hacktoberDialog, #DOGCDialog, #celonisDialog, #ciscoDialog, #GCCRPDialog, #GCRFPDialog, #lteDialog, #GCRFP2022Dialog
+#wiproDialog, #TCSDialog, #hack2022Dialog, #hacktoberDialog, #DOGCDialog, #celonisDialog, #ciscoDialog, #GCCRPDialog, #GCRFPDialog, #nptelDialog, #lteDialog, #GCRFP2022Dialog
 {
     text-align: center;
     justify-content: center;
