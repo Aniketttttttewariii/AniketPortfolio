@@ -10,9 +10,15 @@
     <title>Aniket's Portfolio Website</title>
 </head>
 <body id="body">
-    <nav id="nav">
-        <p>Welcome!!</p>
-    </nav>
+    <div>
+        <nav id="nav">
+            <p>Welcome!!</p>
+            <div class="websiteCount">
+                <div>Visitor Count&#128123;:&nbsp;</div>
+                <div class="website-counter"></div>
+            </div>
+        </nav>
+    </div>
     <div id="about" class="part1">
         <p>Hello, My name is</p>
     </div>
@@ -37,7 +43,8 @@
         <!-- <button id="seeResume" onclick="window.location.href='https://drive.google.com/file/d/1p2XxGAhuJeOZ3A6kTIO4U7UEoVpHChUU/view?usp=drivesdk';">See Resume</button> -->
         <!-- <button id="seeResume" onclick="window.location.href='https://drive.google.com/file/d/1yyVfgHeS5glXq3rXVoifjv_WT4Uu7Mg3/view?usp=drivesdk';">See Resume</button>
         <button id="githubProfile" onclick="window.location.href='https://www.github.com/AniketTewari';">Github Profile</button> -->
-        <button id="seeResume" onclick="window.open('https://drive.google.com/file/d/1yyVfgHeS5glXq3rXVoifjv_WT4Uu7Mg3/view?usp=drivesdk')">See Resume</button>
+        <!-- <button id="seeResume" onclick="window.open('https://drive.google.com/file/d/1yyVfgHeS5glXq3rXVoifjv_WT4Uu7Mg3/view?usp=drivesdk')">See Resume</button> -->
+        <button id="seeResume" onclick="window.open('https://drive.google.com/file/d/1bWlGmiLTcQnsN-HRseVaa5XJbJTf-mT8/view?usp=sharing')">See Resume</button>
         <button id="githubProfile" onclick="window.open('https://www.github.com/AniketTewari')">Github Profile</button>
     </div>
     <div class="part5">
@@ -764,6 +771,22 @@
     {
         alert("App is not published in Play Store!!\nYou can navigate to Github Profile in order to see the Source Code of the app.");
     }
+
+    var counterContainer=document.querySelector(".website-counter");
+    var visitCount=localStorage.getItem("page_view");
+
+    //Check if page_view entry is present
+    if(visitCount) 
+    {
+        visitCount=Number(visitCount)+1;
+        localStorage.setItem("page_view",visitCount);
+    } 
+    else 
+    {
+        visitCount=1;
+        localStorage.setItem("page_view",1);
+    }
+    counterContainer.innerHTML=visitCount;
     
     function funcloselte()
     {
@@ -771,5 +794,6 @@
         dialog.close();
     }
 
+    
 </script>
 </html>
