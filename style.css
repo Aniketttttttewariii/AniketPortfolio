@@ -524,6 +524,25 @@ li
     color: white;
 }
 
+#nav
+{
+    display: flex;
+    flex-direction: row;
+    gap: 71%;
+}
+
+.websiteCount
+{
+    color: grey;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    justify-content: right;
+    padding-right: 51px;
+    margin-top: 11px;
+}
+
 #dialogGithub
 {
     background-color: #A395E9;
